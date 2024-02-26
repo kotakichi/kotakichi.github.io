@@ -1,0 +1,22 @@
+■ワークフローに沿ったサイト制作
+１、ラフデザインの作成
+２、ワイヤーフレームの作成
+３、デザインカンプの作成
+４、デザインカンプをもとにコーディング
+
+■使用するカラー
+header:#babfd3
+nav:#aacaed
+content-txt1と3:#bad3c9
+content-txt2:#c0d3ba
+col-1:headerと同じ
+col-3-txt:navと同じ
+footer:#d2d3ba
+
+■ナビゲーションの仕様
+・spの時はハンバーガーメニューで、PCの時はPC用メニュー(横並び)に切り替える。
+・sp用のnav要素と、PC用のnav要素を別々に用意して、幅によって切り替える。
+
+■resizeの設定
+・画面のサイズを変更したときに、画面サイズが900px以上だったら、
+  #g-navから.moveをremoveし、#ham-btnから.is-activeをremoveする。

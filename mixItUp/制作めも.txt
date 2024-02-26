@@ -1,0 +1,19 @@
+■自身で動画のカテゴリーを3つ決め、それに沿って1カテゴリーにつき3つの動画を決める。
+<犬>
+・https://www.youtube.com/watch?v=h64FiO3ME0Q
+・https://www.youtube.com/watch?v=yW5We7GhXUE
+・https://www.youtube.com/watch?v=4SDsmruH-xA　※犬猫
+<猫>
+・https://www.youtube.com/watch?v=i5sGfHzITDY
+・https://www.youtube.com/watch?v=zUOqsEvlXxc
+・https://www.youtube.com/watch?v=swQ8NjD9ynk
+<フェレット>
+・https://www.youtube.com/watch?v=1sfwIm9-KNM
+・https://www.youtube.com/watch?v=T-mPH76T-3A　※フェレット猫
+・https://www.youtube.com/watch?v=nVMOIprdH6c　※フェレット猫
+
+■それぞれの動画をキャプチャーに取って、Photoshopで 1280x720px をアセットで書き出す。
+
+■
+
+■

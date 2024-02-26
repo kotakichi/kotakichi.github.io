@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フィルタリング機能とモーダルを実装</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> <!-- fancybox CSS -->
+</head>
+<body>
+  <h1>フィルタリング機能とモーダルを実装</h1>
+
+  <div class="container">
+    <div class="btn-wrapper">
+      <button type="button" data-filter="all">すべて</button>
+      <button type="button" data-filter=".dogs">犬</button>
+      <button type="button" data-filter=".cats">猫</button>
+      <button type="button" data-filter=".ferrets">フェレット</button>
+      <button type="button" data-sort="order:asc">人気順</button>
+    </div><!-- /.btn-wrapper -->
+
+    <div class="contents">
+      <div class="mix dogs" data-order="5"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=h64FiO3ME0Q" data-fancybox>
+          <img src="img/cap1_1.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix dogs" data-order="8"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=kQ6VMQVWuZI" data-fancybox>
+          <img src="img/cap1_2.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix dogs cats" data-order="2"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=4SDsmruH-xA" data-fancybox>
+          <img src="img/cap1_3.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix cats" data-order="7"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=i5sGfHzITDY" data-fancybox>
+          <img src="img/cap2_1.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix cats" data-order="4"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=zUOqsEvlXxc" data-fancybox>
+          <img src="img/cap2_2.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix cats" data-order="1"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=swQ8NjD9ynk" data-fancybox>
+          <img src="img/cap2_3.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix ferrets" data-order="9"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=1sfwIm9-KNM" data-fancybox>
+          <img src="img/cap3_1.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix ferrets cats" data-order="6"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=T-mPH76T-3A" data-fancybox>
+          <img src="img/cap3_2.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="mix ferrets cats" data-order="3"> <!-- data-orderは人気順 -->
+        <a href="https://www.youtube.com/watch?v=nVMOIprdH6c" data-fancybox>
+          <img src="img/cap3_3.jpg" alt="">
+        </a>
+      </div>
+    </div><!-- /.contents -->
+  </div><!-- /.container -->
+
+
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+  <!-- fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- mixItUp -->
+  <script src="js/mixitup.js"></script>
+
+  <script>
+    let mixer = mixitup('.contents');
+  </script>
+</body>
+</html>
