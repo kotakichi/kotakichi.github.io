@@ -48,6 +48,9 @@ h1{
       width: calc((100% - 20px) / 2);
     }
   }
+  @media (max-width:680px){
+    gap: 40px 20px;
+  }
 }
 
 /* スクロールバーを常に表示 */
