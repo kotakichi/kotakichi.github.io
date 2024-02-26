@@ -12,6 +12,7 @@ h1{
 .container{
   max-width: 1020px;
   margin: 0 auto 50px;
+  padding: 10px;
 }
 
 /* ボタン */
@@ -21,7 +22,7 @@ h1{
     background-color: #e0dede;
     padding: 5px 10px;
     border-radius: 6px;
-    margin: 0 5px;
+    margin: 5px;
     &.mixitup-control-active{ /* タブ選択された場合の設定 */
       background-color: #111;
       color: #fff;
@@ -42,6 +43,9 @@ h1{
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    @media (max-width:680px){
+      width: calc((100% - 20px) / 2);
     }
   }
 }
